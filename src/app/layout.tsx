@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
+import NavItem from "@/components/NavItem";
 
-const inter = Inter({ subsets: ["latin"] });
+
+
+
+
+
+const montserrat =Nunito({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +22,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${montserrat.className} bg-pink-200`}>
+        <nav className="w-full pt-8 px-8  flex items-center justify-between bg-pink-400">
+          <h1 className="text-xl pb-8 text-pink-800">Logo</h1>
+          <ul className="flex items-center gap-8 text-xl text-pink-900">
+            <NavItem href="/">Home</NavItem>
+            <NavItem href="/about">About me</NavItem>
+            <NavItem href="/projects">My projects</NavItem>
+            <NavItem href="/contact">Contacts</NavItem>
+          </ul>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
