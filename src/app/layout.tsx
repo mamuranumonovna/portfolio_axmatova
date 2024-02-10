@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import NavItem from "@/components/NavItem";
+import Image from "next/image";
+
 
 
 
@@ -20,11 +22,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
       <body className={`${montserrat.className} bg-pink-200`}>
-        <nav className="w-full pt-8 px-8  flex items-center justify-between bg-pink-400">
-          <h1 className="text-xl pb-8 text-pink-800">Logo</h1>
+        <nav className="w-full pt-8 px-8  flex items-center justify-between bg-pink-300">
+          <Image 
+          src='/logo-transparent-svg.svg'
+          width={200}
+          height={700}
+          alt="Logo"
+       
+          />
           <ul className="flex items-center gap-8 text-xl text-pink-900">
             <NavItem href="/">Home</NavItem>
             <NavItem href="/about">About me</NavItem>

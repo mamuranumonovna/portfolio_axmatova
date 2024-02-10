@@ -24,7 +24,7 @@ export default function Contact() {
     <HiDotsHorizontal />
     </div>
     <div className='flex items-center justify-around text-3xl'>
-      <div className='flex flex-col items-center '>
+      <div className='flex flex-col items-center w-[500px]'>
       <div className='flex items-center gap-4 pb-4'>
       <MdOutlineMail className='text-pink-950 text-4xl'/>
       <h1>E-mail</h1>
@@ -33,23 +33,23 @@ export default function Contact() {
         axmatovamamura0203@gmail.com
       </Link>
       </div>
-      <div className='flex flex-col items-center '>
+      <div className='flex flex-col items-center w-[500px] '>
       <div className='flex items-center gap-4 pb-4'>
       <FiPhone className='text-pink-950 text-4xl'/>
       <h1>Telephone number</h1>
       </div>
       <h1>+99 890 021 74 42</h1>
       </div>
-      <div className='flex flex-col items-center '>
+      <div className='flex flex-col items-center w-[500px]'>
       <div className='flex items-center gap-4 pb-4'>
       <IoShareSocialOutline className='text-pink-950 '/>
       <h1>Social media</h1>
       </div>
       <div className='flex items-center'>
-      <Link href={''}>
+      <Link href={'https://www.linkedin.com/in/ma-mura-axmatova-2b37512a6'}>
       <AiOutlineLinkedin className='text-pink-950 '/>
       </Link>
-      <Link href={''}>
+      <Link href={'https://t.me/@numonovna_m'}>
       <RiTelegramLine className='text-pink-950 text-4xl'/>
       </Link>
       </div>
