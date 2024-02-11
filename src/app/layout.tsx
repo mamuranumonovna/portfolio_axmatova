@@ -10,6 +10,7 @@ import Image from "next/image";
 
 
 
+
 const montserrat =Nunito({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
@@ -26,19 +27,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className} bg-pink-200`}>
-        <nav className="w-full pt-8 px-8  flex items-center justify-between bg-pink-300">
+       
+        <nav className="w-full py-8 px-8  flex items-center justify-between bg-pink-300">
           <Image 
           src='/logo-transparent-svg.svg'
           width={200}
           height={700}
           alt="Logo"
-       
           />
-          <ul className="flex items-center gap-8 text-xl text-pink-900">
-            <NavItem href="/">Home</NavItem>
-            <NavItem href="/about">About me</NavItem>
-            <NavItem href="/projects">My projects</NavItem>
-            <NavItem href="/contact">Contacts</NavItem>
+          <ul className=" text-xl text-pink-900">
+          <NavItem/>
           </ul>
         </nav>
         {children}

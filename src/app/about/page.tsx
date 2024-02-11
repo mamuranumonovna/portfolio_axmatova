@@ -5,8 +5,8 @@ import { HiDotsHorizontal } from "react-icons/hi";
 export default function About() {
   return (
     <div>
-      <h1 className='text-center text-5xl pt-11'>About me</h1>
-      <div className='flex gap-2 items-center text-pink-500  justify-center mt-8'>
+      <h1 className='text-center text-5xl pt-8'>About me</h1>
+      <div className='flex gap-2 items-center text-pink-500  justify-center mt-2'>
       <HiDotsHorizontal />
       <HiDotsHorizontal />
       <HiDotsHorizontal />
@@ -21,19 +21,23 @@ export default function About() {
         <div>
           <p></p>
         </div>
-        {/* <div className='p-4'>
-        <h1 className='text-4xl text-pink-900 text-center pb-4 font-bold'>Education</h1>
-        <div className='text-center'>
-        <p className='text-xl text-white '>September 2021- Present</p>
-        <h1 className='text-3xl text-pink-800'>Tashkent University of Information Technologies,Tashkent,Uzbekistan <span>-Bachelor's Degree</span></h1>
-        <p className='text-2xl text-pink-600'>Telecommunication Technologies, General Diploma</p>
-        </div>
-        <div className='text-center'>
-        <p className='text-xl text-white '>September 2019- June 2021</p>
-        <h1 className='text-3xl text-pink-800 font-light'>Academic Lyceum of NSPI,Navoi,Uzbekistan <span>-Associate's Degree</span></h1>
-        <p className='text-2xl text-pink-600'>Exast sciences Technology</p>
-        </div>
-        </div> */}
+       <div className='text-pink-950 w-[1600px] mx-auto px-20'>
+        <p className='text-4xl py-1 leading-normal '>
+        My name is Ma'mura, I am 21 years old. 
+        </p>
+        
+        <p className='text-4xl py-1 leading-normal '>
+        I got interested in programming after entering university and started learning programming with C++ programming language.
+        </p>
+        <p className='text-4xl py-1 leading-normal '>
+        Currently, I am studying  at Tashkent University of Information Technologies in third year.
+        </p>
+        <p className='text-4xl py-1 leading-normal '>
+        My specialty is Telecommunication technologies.
+        </p>
+        <p className='text-4xl py-1 leading-normal'>  After I became interested in programming, I started learning HTML CSS on my own, and in order to further improve my knowledge, I took lessons from qualified mentors in the Frontend ReactJs (Standard) course at Najot Ta'lim
+        IT Center.</p>
+       </div>
         <div className='text-center p-4'>
           <h1 className='text-4xl text-pink-900 pb-4 font-bold'>Skills</h1>
           <div className='flex gap-4 items-center justify-center'>

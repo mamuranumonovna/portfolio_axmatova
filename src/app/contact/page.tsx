@@ -23,6 +23,12 @@ export default function Contact() {
     <HiDotsHorizontal />
     <HiDotsHorizontal />
     </div>
+    <div>
+      <form action="">
+        <input type="text" />
+        <input type="text" />
+      </form>
+    </div>
     <div className='flex items-center justify-around text-3xl'>
       <div className='flex flex-col items-center w-[500px]'>
       <div className='flex items-center gap-4 pb-4'>
@@ -49,7 +55,7 @@ export default function Contact() {
       <Link href={'https://www.linkedin.com/in/ma-mura-axmatova-2b37512a6'}>
       <AiOutlineLinkedin className='text-pink-950 '/>
       </Link>
-      <Link href={'https://t.me/@numonovna_m'}>
+      <Link href={'https://t.me/numonovna_m'}>
       <RiTelegramLine className='text-pink-950 text-4xl'/>
       </Link>
       </div>
