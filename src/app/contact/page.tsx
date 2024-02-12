@@ -8,11 +8,12 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { RiTelegramLine } from "react-icons/ri";
 import Link from 'next/link';
 
+
 export default function Contact() {
   return (
     <div>
-    <h1 className='text-center text-5xl pt-16'>Contacts</h1>
-    <div className='flex gap-2 items-center text-pink-500  justify-center my-8'>
+    <h1 className='text-center text-5xl pt-11'>Contacts</h1>
+    <div className='flex gap-2 items-center text-pink-500  justify-center my-4'>
     <HiDotsHorizontal />
     <HiDotsHorizontal />
     <HiDotsHorizontal />
@@ -23,10 +24,37 @@ export default function Contact() {
     <HiDotsHorizontal />
     <HiDotsHorizontal />
     </div>
-    <div>
+    <div className='w-[1000px] mx-auto p-8'>
       <form action="">
-        <input type="text" />
-        <input type="text" />
+        <div className='flex items-center justify-between'>
+      <div className='py-8'>
+      <label htmlFor="name" className='block text-pink-900'>Your name *</label>
+       <input
+       id='name'
+        placeholder='Enter your name '
+        type="text" 
+        className='block w-[400px]  py-2  border-b-2 bg-pink-200 focus:outline-none placeholder:text-pink-900 border-b-pink-900'
+        />
+      </div>
+        <div className='py-8'>
+        <label htmlFor="email" className='block text-pink-900'>Your email *</label>
+        <input 
+        id='email'
+        placeholder='Enter your email'
+        type="text" 
+        className='block w-[400px]  py-2  border-b-2 bg-pink-200 focus:outline-none placeholder:text-pink-900 border-b-pink-900'
+        />
+        </div>
+        </div>
+        <label htmlFor="message" className='block text-pink-900'>Your Message *</label>
+        <input 
+        id='message'
+        placeholder='Enter your needs'
+        type="text" 
+        className='block w-full  py-2 border-b-2 bg-pink-200 mb-4 focus:outline-none placeholder:text-pink-900 border-b-pink-900'
+        />
+        
+        <button className=" block mx-auto px-4 py-4 bg-pink-800 text-white rounded-lg hover:bg-transparent  hover:text-pink-800 border-[1px] hover:border-pink-800 focus:outline-none focus:ring focus:ring-pink-800 my-8">Send Message</button>
       </form>
     </div>
     <div className='flex items-center justify-around text-3xl'>
